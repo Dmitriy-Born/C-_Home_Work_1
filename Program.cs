@@ -38,12 +38,35 @@
 // }
 
 //Задание №3
-Console.WriteLine("Введите число для проверки: ");
+// Console.WriteLine("Введите число для проверки: ");
+// int N = int.Parse(Console.ReadLine()!);
+
+// if (N%2==0){
+//     Console.WriteLine($"Число {N} является четным");
+// }
+// else {
+//     Console.WriteLine($"Число {N} является нечетным");
+// }
+
+//Задание №4
+Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine()!);
+int i = 2;
 
 if (N%2==0){
-    Console.WriteLine($"Число {N} является четным");
+    while (i < N) {
+        Console.Write($"{i}, ");
+        i = i + 2;
+    }
+    Console.Write(i);
 }
 else {
-    Console.WriteLine($"Число {N} является нечетным");
+N = N - 1;
+if (N%2==0){
+    while (i < N) {
+        Console.Write($"{i}, ");
+        i = i + 2;
+    }
+    Console.Write(i);
+}
 }
