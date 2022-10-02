@@ -1,16 +1,22 @@
 ﻿//Задание №1
-// Console.WriteLine("Введите первое число: ");
-// int Num1 = int.Parse(Console.ReadLine()!);
-// Console.WriteLine("Введите второе число: ");
-// int Num2 = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите первое число: ");
+int Num1 = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите второе число: ");
+int Num2 = int.Parse(Console.ReadLine()!);
 
-// if (Num1 > Num2){
-//     Console.WriteLine($"Максимальное число из {Num1} и {Num2} - это {Num1}");
-// }
-// else
-// {
-//     Console.WriteLine($"Максимальное число из {Num1} и {Num2} - это {Num2}");
-// }
+if (Num1 > Num2){
+    Console.WriteLine($"Максимальное число из {Num1} и {Num2} - это {Num1}");
+}
+else
+{
+    if (Num1 < Num2){
+         Console.WriteLine($"Максимальное число из {Num1} и {Num2} - это {Num2}");
+    }
+    else{
+        Console.WriteLine($"{Num1} и {Num2} равны");
+    }
+    
+}
 
 //Задание №2
 // Console.WriteLine("Введите первое число: ");
@@ -49,24 +55,24 @@
 // }
 
 //Задание №4
-Console.WriteLine("Введите число: ");
-int N = int.Parse(Console.ReadLine()!);
-int i = 2;
+// Console.WriteLine("Введите число: ");
+// int N = int.Parse(Console.ReadLine()!);
+// int i = 2;
 
-if (N%2==0){
-    while (i < N) {
-        Console.Write($"{i}, ");
-        i = i + 2;
-    }
-    Console.Write(i);
-}
-else {
-N = N - 1;
-if (N%2==0){
-    while (i < N) {
-        Console.Write($"{i}, ");
-        i = i + 2;
-    }
-    Console.Write(i);
-}
-}
+// if (N%2==0){
+//     while (i < N) {
+//         Console.Write($"{i}, ");
+//         i = i + 2;
+//     }
+//     Console.Write(i);
+// }
+// else {
+// N = N - 1;
+// if (N%2==0){
+//     while (i < N) {
+//         Console.Write($"{i}, ");
+//         i = i + 2;
+//     }
+//     Console.Write(i);
+// }
+// }
